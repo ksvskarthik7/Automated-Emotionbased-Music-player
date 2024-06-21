@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Mood-Driven Melodies
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Mood-Driven Melodies is a React application that plays music based on the user's detected emotion through speech recognition. The application captures user input through voice and determines the emotion expressed. It then selects and plays a song corresponding to the detected emotion.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Uses the browser's SpeechRecognition API to capture user input through voice.
+- Determines the user's emotion using a pre-trained emotion recognition model from Hugging Face.
+- Selects a song based on the detected emotion and plays it.
+- Provides pre-defined suggestions for user input to simulate different emotional states.
+- Displays song information including title, artist, and album artwork.
+- Includes controls to play/pause the song and track progress.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js: A JavaScript library for building user interfaces.
+- SpeechRecognition API: Enables speech recognition capabilities in web applications.
+- Hugging Face API: Provides pre-trained models for natural language processing tasks.
+- HTML5 Audio: Used to play audio files within the browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation and Setup
 
-### `npm test`
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Install dependencies using `npm install`.
+4. Start the development server using `npm start`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `npm run build`
+1. Launch the application by running `npm start`.
+2. Click the "Start Listening" button to enable speech recognition.
+3. Speak into your microphone to express an emotion.
+4. Alternatively, click one of the pre-defined suggestion buttons.
+5. The application will detect the emotion and play a corresponding song.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Emotion Recognition Model
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The application utilizes the T5-base-finetuned-emotion model from Hugging Face's model hub for emotion recognition. The model is trained to classify text inputs into six emotion categories: joy, love, fear, surprise, sadness, and anger.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Credits
 
-### `npm run eject`
+- This application was created by K.S.V.S Karthik
+- Emotion recognition model provided by Hugging Face.
+- Music tracks sourced from NaaSongs website.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## License
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](LICENSE).
