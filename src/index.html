@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const apikey ='v23VGFNMPmXDGE43bWvcNaJQl1ol7WL9bVsNqNBaUis'
+       function analyze() {
+        fetch('https://apis.paralleldots.com/v4/emotion', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              text: 'I had great expectations from my new phone but it turned out to be another hyped up model with average features.',
+              api_key: 'yourapikey'
+            })
+          })
+          .then(response => response.json())
+          .then(data => {
+            console.log('Emotion analysis result:', data);
+          })
+          .catch(error => {
+            console.error('Error analyzing emotions:', error);
+          });
+       }
+       analyze();
+    </script>
+</body>
+</html>
