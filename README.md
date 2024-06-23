@@ -5,9 +5,13 @@ Mood-Driven Melodies is a React application that plays music based on the user's
 <img width="949" alt="image" src="https://github.com/ksvskarthik7/Automated-Emotionbased-Music-player/assets/114343100/6145f649-de64-4ab1-9566-4c654bda5c08">
 
 You can press on suggestion texts for your moods in a click and get your song.
+
+
 ![image](https://github.com/ksvskarthik7/Automated-Emotionbased-Music-player/assets/114343100/322decdd-4cf4-4893-942d-a817563eed11)
 
 or You can click on the "Start Listening" to talk about your day. It will extract the emotion from it automatically.
+
+
 ![image](https://github.com/ksvskarthik7/Automated-Emotionbased-Music-player/assets/114343100/e90fea17-67c8-4f69-aa04-beeca77c0695)
 
 It might play motivational songs for "fear" and "sadness" emotions. This is opted for the sake of user comfort and it can be customised if necessary.
